@@ -3,9 +3,9 @@
 using namespace std;
 
 
-long unsigned Factorial (int n){
+long unsigned Factorial (int n);
 
-}
+
 
 int main()
 {
@@ -21,4 +21,12 @@ int main()
 
 
     return 0;
+}
+
+long unsigned Factorial (int n){
+    int i;
+    long unsigned fact = 1;
+    for(i = 1; i <= n; i++)
+        fact *= i;
+    return fact;
 }
